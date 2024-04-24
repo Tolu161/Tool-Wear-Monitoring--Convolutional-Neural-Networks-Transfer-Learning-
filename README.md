@@ -1,4 +1,4 @@
-# TWM-CNN-Transfer-Learning-
+# Transfer Learning with CNNs for Tool Wear Monitoring
 
 Analysis of Transfer Learning to pre-trained Deep learning model architectures for classification applications.
 
