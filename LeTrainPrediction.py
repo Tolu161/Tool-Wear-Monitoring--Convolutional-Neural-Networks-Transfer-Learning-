@@ -15,15 +15,6 @@ import matplotlib.pyplot as plt
 from sklearn.model_selection import train_test_split
 
 
-# Load the data from directories
-#three sensors 
-#train_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array.npy'
-
-#250 samples -USE !!!!!!
-#train_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C1_250.npy'
-#test_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C9__250.npy'
-
-
 #switching c2 to train 
 train_dir= 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C2_250.npy'
 test_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C12_250.npy'
@@ -35,24 +26,6 @@ testC2_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mil
 valc12_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C9_TrainLabelsPredict_250.npy'
 
 
-
-'''
-train_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C1_250.npy'
-
-test_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C9__250.npy'
-
-train_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C1_TrainLabelsPredict_250.npy'
-
-test_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C9_TrainLabelsPredict_250.npy'
-
-testC2_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C4_250.npy'
-
-valC12_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C10_250.npy'
-
-testC2_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C4_TrainLabelsPredict_250.npy'
-
-valc12_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C10_TrainLabelsPredict_250.npy'
-'''
 
 traindata = np.load(train_dir)
 testdata = np.load(test_dir)
@@ -68,10 +41,6 @@ print(testdata.shape)
 traindata = traindata.astype('float32') / 255
 testdata = testdata.astype('float32') / 255
 
-#250 samples
-#train_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C1_TrainLabelsPredict_250.npy'
-#test_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C9_TrainLabelsPredict_250.npy'
-
 
 train_labels = np.load(train_labels_dir)
 test_labels = np.load(test_labels_dir)
@@ -80,42 +49,16 @@ test_labels = np.load(test_labels_dir)
 #TL Data 
 #three sensors 
 
-
-#testC2_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C2_250.npy'
-
-#C3
-#testC2_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C3_250.npy'
-#C4
-#testC2_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C4_250.npy'
 testC2 = np.load(testC2_dir)
 #3 SENSORS
 testC2 = testC2.reshape(testC2.shape[0], 224, 224, 3) 
 testC2 = testC2.astype('float32') / 255
-
-
-#valC12_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C12_250.npy'
-
-#valC12_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C11_250.npy'
 
 #C10
 #valC12_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array_C10_250.npy'
 valC12 = np.load(valC12_dir)
 valC12 = valC12.reshape(valC12.shape[0], 224,224,3) 
 valC12 = valC12.astype('float32') / 255
-
-
-
-#250 samples 
-#testC2_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C2_TrainLabelsPredict_250.npy'
-#valc12_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C12_TrainLabelsPredict_250.npy'
-
-
-
-#C4 LABEL 
-#testC2_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C4_TrainLabelsPredict_250.npy'
-
-#C10 LABEL 
-#valc12_labels_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C10_TrainLabelsPredict_250.npy'
 
 
 
