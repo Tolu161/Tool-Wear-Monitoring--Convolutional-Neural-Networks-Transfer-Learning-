@@ -12,7 +12,7 @@ Using NASA Mill Data obtained from CNC Milling experiments
 
 The following conditions of experiments were carried out : 
 
-![image](https://github.com/user-attachments/assets/7d5b3948-26ae-4210-9664-bef32413c8a8)
+![image](https://github.com/user-attachments/assets/7d5b3948-26ae-4210-9664-bef32413c8a8 =250x250)
 
 Transfer Learning with LeNet-5 and VGG16 for tool wear classification and regression 
 
