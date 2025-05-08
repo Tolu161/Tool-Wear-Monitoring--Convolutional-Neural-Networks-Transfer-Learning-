@@ -124,12 +124,6 @@ for col in selected_data.columns:
 # Combine the resized MTFs into a single array
 combined_MTFs = np.stack(resized_MTFs, axis=-1)  # Stack along the last axis (channels)
 
-# Ensure we have at most 612 MTFs
-
-#when going back to 250 samples uncomment the next line - DONT FORGET - 12/03/24 - 09:21 AM !!!!!!!!!!!!!!!!!!!!!!
-
-#combined_MTFs = combined_MTFs[:612]
-
 # Save the array to a file
 np.save('MTFs_array_C1_500.npy', combined_MTFs)
 
