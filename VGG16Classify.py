@@ -21,50 +21,10 @@ import matplotlib.pyplot as plt
 from sklearn import metrics 
 from sklearn.metrics import classification_report 
 
-#print(keras.utils.get_file('', ''))
-
-
-# import train labels and test labels from 
-
-#from C1C9Label import train_labels
-
-
 '''
 from C1C9_Testtrain import traindata 
 
 '''
-
-
-# 25/01/24 sort this directory out instead of importing from scripts just link to the directories. 
-
-#train_dir = '/Users/toluojo/Documents/University of Nottingham /YEAR 5 /MMME 4086 - Indv Project /mill/MTF_images_resized'
-
-#test_dir = '/Users/toluojo/Documents/University of Nottingham /YEAR 5 /MMME 4086 - Indv Project /mill/MTF_images_C9'
-
-'''
-train_labels_dir = '/Users/toluojo/Documents/University of Nottingham /YEAR 5 /MMME 4086 - Indv Project /mill/C1_TrainLabels.npy'
-'''
-
-#train_labels_dir = '/Users/toluojo/Documents/University of Nottingham /YEAR 5 /MMME 4086 - Indv Project /mill/C1_TrainLabels.npy'
-
-
-
-'''OTHMAN laptop
-
-
-train_dir = 'C:/Users/oerro/Downloads/mill/mill/MTF_images_resized'
-
-train_labels_dir = 'C:/Users/oerro/Downloads/mill/mill/C1_TrainLabels.npy'
-
-test_dir = 'C:/Users/oerro/Downloads/mill/mill/MTF_images_C9'
-
-test_labels_dir = 'C:/Users/oerro/Downloads/mill/mill/C9_TrainLabels.npy' 
-
-'''
-
-
-#train_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTF_images_resized_SMCAC'
-
 #250 SAMPLES
 train_dir = 'C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/MTFs_array.npy'
 train_labels_dir ='C:/Users/egyto1/OneDrive - The University of Nottingham/mill/mill/C1_TrainLabels.npy'
